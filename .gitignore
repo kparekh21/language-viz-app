@@ -1,42 +1,38 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# 🔧 Node / Angular
+node_modules/
+dist/
+.angular/
+.vscode/
+.env
+.env.*.local
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+# Angular build outputs
+out-tsc/
+coverage/
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
-
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
-
-# System files
+# Editor / OS
 .DS_Store
-Thumbs.db
+.idea/
+*.log
+
+# 🔧 Python backend
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Backend generated files
+backend/outputs/
+backend/temp_scripts/
+*.pdf
+*.html
+
+# Ignore test artifacts
+*.bak
+*.tmp
+
+# Optionally ignore R plots
+Rplots.pdf
+
+# VSCode workspace
+*.code-workspace
